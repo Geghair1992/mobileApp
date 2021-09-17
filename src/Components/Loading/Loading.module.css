@@ -1,0 +1,36 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper span{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: Loading 1s ease infinite;
+    margin: 10px;
+
+}
+
+@keyframes Loading{
+    33%,66%{
+        transform:scale(1.2)
+    }
+}
